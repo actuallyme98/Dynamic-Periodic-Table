@@ -5396,6 +5396,9 @@ function hideContent(content) {
 function closeModal(event) {
     event.preventDefault();
     event.stopImmediatePropagation();
+    if (!elementClicked) {
+        return;
+    }
 
     let target = event.target,
         tooltip = elementClicked.querySelector('.tooltip');
@@ -5428,6 +5431,9 @@ function setNewTemperature(currentValue) {
 }
 
 function addClass(className, element, index) {
+    if (!element) {
+        return;
+    }
     setTimeout(() => {
         element.classList.add(className);
     }, index * DELAY);
