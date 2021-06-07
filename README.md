@@ -1,3 +1,3 @@
 ### Dynamic Periodic Table
 
-- Source code from Codepen.
+https://dynamic-periodic-table.herokuapp.com/
